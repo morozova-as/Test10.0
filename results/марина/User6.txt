@@ -1,0 +1,82 @@
+USER NAME: марина
+
+BEGIN TIME: 21:25:48 21.10.2017
+
+------------------------------
+
+Question1--------RIGHT
+
+Question2--------WRONG
+
+Question3--------WRONG
+
+Question4--------WRONG
+
+Question5--------RIGHT
+
+Question6--------WRONG
+
+Question7--------WRONG
+
+Question8--------RIGHT
+
+Question9--------RIGHT
+
+Question10-------RIGHT
+
+------------------------------
+
+
+
+END TIME: 21:26:01 21.10.2017
+
+
+
+RESULT: 5
+
+
+
+TIME: 13 s.
+
+Question11-------RIGHT
+
+
+
+BEGIN TIME: 21:26:36 21.10.2017
+
+------------------------------
+
+Question1--------WRONG
+
+Question2--------WRONG
+
+Question3--------WRONG
+
+Question4--------RIGHT
+
+Question5--------WRONG
+
+Question6--------WRONG
+
+Question7--------RIGHT
+
+Question8--------WRONG
+
+Question9--------RIGHT
+
+Question10-------RIGHT
+
+------------------------------
+
+
+
+END TIME: 21:26:47 21.10.2017
+
+
+
+RESULT: 4
+
+
+
+TIME: 12 s.
+

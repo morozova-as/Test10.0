@@ -1,0 +1,62 @@
+{% load staticfiles %}
+
+
+<html>
+    <head>
+
+
+    	<title>Results</title>
+
+
+        <script src="../../../static/testapp/bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+        <link href="../../../static/testapp/bootstrap-3.3.2-dist/css/bootstrap.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="{% static 'testapp/style.css' %}">
+
+	</head>
+
+	<body>
+
+
+
+		<div class="container-fluid page-wrap">
+			<div class="row">
+
+			<div class='col-sm-6'>
+				<img src="../../../static/testapp/images/dks.png">
+			</div>
+
+			<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+			    <h1>РЕЗУЛЬТАТЫ</h1>
+			</div>
+
+
+			<div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 results text-center bt">
+				<p><strong>Правильных ответов:</strong></p>
+				<p><strong>{{ result }}</strong></p>
+
+				<p><strong>Время начала:</strong></p>
+				<p><strong>{{ begin }}</strong></p>
+
+
+				<p><strong>Время окончания:</strong></p>
+				<p><strong>{{ end }}</strong></p>
+
+
+				<form action="{% url 'testapp:down' id%}" user_id%}" method="post">
+				    {% csrf_token %}
+					<input type="submit" value="DOWNLOAD" >
+				</form>
+			</div>
+
+
+			<div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 imgsup  text-center'>
+				<img src="../../../static/testapp/images/super.png">
+			</div>
+			
+		</div>
+		</div>
+
+	</body>
+
+</html>

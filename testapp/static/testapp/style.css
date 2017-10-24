@@ -1,0 +1,147 @@
+@font-face {
+      font-family: 'Kelly Slab';
+      src: url("KellySlab-Regular.ttf") format("truetype");
+}
+html, body { 
+  /*font-family: 'Trebuchet MS' monospace;*/
+  font-family: 'Kelly Slab', cursive;
+}
+
+body {
+
+  background: #EDDFCF;/* url("images/dks.png") no-repeat right bottom;*/
+  color: #436ca2;
+}
+h1{
+  font-size:80;
+  color:#C83B28;
+  text-align: center;
+  min-height: 25%;
+}
+
+[class^='col']{
+  /*border: 1px solid black;*/
+}
+.imgsup {
+  /*margin-top: 236px;*/
+}
+
+.timer p{
+  font-size: 30;
+}
+.results p{
+  font-size: 20;
+}
+input {
+  outline:none;
+}
+form{
+  outline: none;
+}
+
+.q_text h1{
+  font-size: 30;
+  height: auto;
+}
+
+.image_q{
+
+}
+
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+  color:#436ca2;
+  
+  font-size: 80;
+  padding:5px 15px; 
+  background:#ccc;
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
+}
+
+.bt input[type=submit] {
+
+  font-size: 30;
+
+}
+
+.err p{
+  font-size: 40;
+}
+
+footer{
+  background-color: black;
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+ /* top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);*/
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+label {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 10px;
+  line-height: 36px;
+  cursor: pointer;
+}
+
+label::before {
+  content: " ";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #436ca2;
+  border-radius: 4px;
+  z-index: -1;
+}
+input[type="radio"] + label::before {
+  border-radius: 18px;
+}
+/* Checked */
+
+input[type="radio"]:checked + label {
+  padding-left: 10px;
+  color: #fff;
+}
+
+input[type="radio"]:checked + label::before {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #436ca2;
+}
+/* Transition */
+label,
+label::before {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}

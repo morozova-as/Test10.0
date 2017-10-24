@@ -1,0 +1,50 @@
+USER NAME: Барбариска
+
+BEGIN TIME: 21:27:26 21.10.2017
+
+------------------------------
+
+Question1--------RIGHT
+
+Question2--------RIGHT
+
+Question3--------RIGHT
+
+
+
+BEGIN TIME: 21:27:32 21.10.2017
+
+------------------------------
+
+Question1--------WRONG
+
+Question2--------WRONG
+
+Question3--------WRONG
+
+Question4--------RIGHT
+
+Question5--------RIGHT
+
+Question6--------RIGHT
+
+Question7--------WRONG
+
+Question8--------WRONG
+
+Question9--------WRONG
+
+Question10-------WRONG
+
+------------------------------
+
+END TIME: 21:27:51 21.10.2017
+
+
+
+RESULT: 3
+
+
+
+TIME: 20 s.
+

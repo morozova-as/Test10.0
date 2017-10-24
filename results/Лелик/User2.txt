@@ -1,0 +1,54 @@
+USER NAME: Лелик
+
+BEGIN TIME: 18:49:35 16.10.2017
+
+------------------------------
+
+Question1--------WRONG
+
+Question2--------WRONG
+
+Question3--------WRONG
+
+Question4--------WRONG
+
+
+
+BEGIN TIME: 18:49:41 16.10.2017
+
+------------------------------
+
+Question1--------WRONG
+
+Question2--------WRONG
+
+Question3--------WRONG
+
+Question4--------WRONG
+
+Question5--------WRONG
+
+Question6--------WRONG
+
+Question7--------WRONG
+
+Question8--------WRONG
+
+Question9--------WRONG
+
+Question10-------WRONG
+
+------------------------------
+
+
+
+END TIME: 18:49:50 16.10.2017
+
+
+
+RESULT: 0
+
+
+
+TIME: 10 s.
+

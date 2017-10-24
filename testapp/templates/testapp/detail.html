@@ -1,0 +1,82 @@
+{% load staticfiles %}
+
+<html>
+    <head>
+
+
+
+        <title>Test</title>
+        <script src="../../../static/testapp/bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+        <link href="../../../static/testapp/bootstrap-3.3.2-dist/css/bootstrap.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="{% static 'testapp/style.css' %}">
+    </head>
+
+
+    <body>
+    	
+
+	    <script type="text/javascript">
+	        function timer(){
+	         var obj=document.getElementById('timer');
+	         obj.innerHTML--;
+
+	         if(obj.innerHTML==0){
+	            document.location.href = "{% url 'testapp:detail' id question.id %}"
+	            setTimeout(function(){},1000);
+	        }
+	         else{setTimeout(timer,1000);}
+	        }
+	        setTimeout(timer,1000);
+
+
+
+	        addEventListener("popstate",function(e){
+			    alert('');
+			},false);
+	    </script>
+
+{{tr}}
+
+
+		<div class="container-fluid page-wrap">
+			<div class="row">
+
+				<div class='col-lg-6 col-md-6 col-sm-6 col-xs-6'>
+					<img src="../../../static/testapp/images/dks.png">
+				</div>
+
+				<div class='col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center timer'>
+					<p>Осталось:</p>
+					<p id="timer">{{t}}</p>
+				</div>
+
+
+				<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 q_text text-center">
+				    <h1>{{ question.question_text }}
+				    	<br>
+				    	{%if question.image%}
+				    		<img src="../../../media/{{ question.image }}" width= 40%>
+				    	{%endif%}
+				    </h1>
+
+				</div>
+
+
+				<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt text-center">
+					<form action="{% url 'testapp:detail' id question.id%}" user_id question.id%}" method="post">
+					    {% csrf_token %}
+					    {% for choice in question.choice_set.all %}
+					        <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+					        <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+					    {% endfor %}
+					    <input type="submit" value="Ответить" />
+					</form>
+				</div>
+
+
+			</div>
+		</div>
+	</body>
+
+</html>
